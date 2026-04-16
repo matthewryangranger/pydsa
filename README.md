@@ -1,4 +1,4 @@
 # pydsa
 Python Data Structures and Algorithms
 
-#### Solving problems on Leetcode, Codewars, etc.
+#### Solving problems found on Leetcode, Codewars, Refactoring katas etc.

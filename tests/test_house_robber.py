@@ -16,3 +16,11 @@ def test_two_house_list():
     result: int = rob(house_list)
     # Then
     assert result is 1
+
+def test_three_house_list():
+    # Given
+    house_list: list[int] = [0, 5, 2]
+    # When
+    result: int = rob(house_list)
+    # Then
+    assert result is 5

@@ -8,3 +8,11 @@ def test_empty_house_list():
     result: int = rob(empty_list)
     # Then
     assert result is 0
+
+def test_two_house_list():
+    # Given
+    house_list: list[int] = [0, 1]
+    # When
+    result: int = rob(house_list)
+    # Then
+    assert result is 1

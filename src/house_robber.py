@@ -16,3 +16,5 @@ def rob(nums: list[int]) -> int:
         index += 1
 
     return max(max_amount_even, max_amount_odd)
+
+__all__ = ['rob']

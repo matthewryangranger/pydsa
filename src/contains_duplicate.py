@@ -8,5 +8,3 @@ def contains_duplicate(nums: list[int]) -> bool:
             return True
         seen.add(num)
     return False
-
-__all__ = ['contains_duplicate']

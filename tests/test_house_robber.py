@@ -1,3 +1,5 @@
+import pytest
+
 from src.house_robber import rob
 
 
@@ -24,3 +26,20 @@ def test_three_house_list():
     result: int = rob(house_list)
     # Then
     assert result is 5
+
+def test_five_house_list():
+    # Given
+    house_list: list[int] = [2,7,9,3,1]
+    # When
+    result: int = rob(house_list)
+    # Then
+    assert result is 12
+
+@pytest.mark.skip(reason="Not feature complete yet")
+def test_outer_house_list():
+    # Given
+    house_list: list[int] = [2,1,1,2]
+    # When
+    result: int = rob(house_list)
+    # Then
+    assert result is 4

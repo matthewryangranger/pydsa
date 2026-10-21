@@ -28,6 +28,15 @@ class TheClass:
     def __init__(self):
         print("I'm here")
 
+class NewClass:
+    def __init__(self, x: str):
+        print('new class', x)
+    def __init__(self, i: int):
+        print('new class', i)
 
 instance: TheClass = TheClass()
+the_instance: NewClass = NewClass('hello')
+the_instance: NewClass = NewClass(4)
+
+### Data Structures
 

@@ -1,6 +1,6 @@
 import pytest
 
-from src.group_anagrams import group_anagrams
+from group_anagrams import group_anagrams
 
 @pytest.mark.skip(reason="Not implemented yet")
 def test_group_anagrams():

@@ -1,6 +1,6 @@
 import pytest
 
-from src.house_robber import rob
+from house_robber import rob
 
 
 def test_empty_house_list():

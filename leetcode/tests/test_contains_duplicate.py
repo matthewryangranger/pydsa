@@ -1,4 +1,4 @@
-from src.contains_duplicate import contains_duplicate
+from contains_duplicate import contains_duplicate
 
 
 def test_single_int_list():

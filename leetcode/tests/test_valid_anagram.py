@@ -1,4 +1,4 @@
-from src.valid_anagram import valid_anagram
+from valid_anagram import valid_anagram
 
 def test_valid_anagram_single_letter():
     assert valid_anagram("a", "a") is True

@@ -1,4 +1,4 @@
-from src.two_sum import two_sum
+from two_sum import two_sum
 
 def test_two_nums_in_list():
     # Given

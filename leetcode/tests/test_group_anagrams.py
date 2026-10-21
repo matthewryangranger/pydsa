@@ -1,12 +1,41 @@
+<<<<<<< HEAD:leetcode/tests/test_group_anagrams.py
 import pytest
 
 from group_anagrams import group_anagrams
+=======
+from src.group_anagrams import group_anagrams
+>>>>>>> 3282969da26b9e7edbe6e0f370dbbfb2fed7efd8:tests/test_group_anagrams.py
 
-@pytest.mark.skip(reason="Not implemented yet")
+
+def test_group_anagrams_empty():
+    # Given
+    uncategorized_words: list[str] = [""]
+    # When
+    categorized_words: list[list[str]] = group_anagrams(uncategorized_words)
+    # Then
+    assert categorized_words == [[""]]
+
+def test_group_anagrams_x():
+    # Given
+    uncategorized_words: list[str] = ["x"]
+    # When
+    categorized_words: list[list[str]] = group_anagrams(uncategorized_words)
+    # Then
+    assert categorized_words == [["x"]]
+
+
+def test_group_anagrams_two_words():
+    # Given
+    uncategorized_words: list[str] = ["act","cat"]
+    # When
+    categorized_words: list[list[str]] = group_anagrams(uncategorized_words)
+    # Then
+    assert categorized_words == [["act", "cat"]]
+
 def test_group_anagrams():
     # Given
     uncategorized_words: list[str] = ["act","pots","tops","cat","stop","hat"]
     # When
     categorized_words: list[list[str]] = group_anagrams(uncategorized_words)
     # Then
-    assert categorized_words == [["hat"],["act", "cat"],["stop", "pots", "tops"]]
+    assert categorized_words == sorted([["hat"],sorted(["act", "cat"]), sorted(["stop", "pots", "tops"])])
